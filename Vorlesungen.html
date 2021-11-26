@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vorlesungen</title>
+    <style>
+      div {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <script type="text/javascript">
+    var base = ["software-engineering", "scientific-computing"];
+    var all = [
+      "software-engineering",
+      "scientific-computing",
+      "discrete-mathematics",
+      "catch21",
+    ];
+
+    var vEdi = ["discrete-mathematics", "catch21"];
+
+    var vSascha = ["software-engineering", "scientific-computing"];
+
+    function checkbox() {
+      if (document.getElementById("edi").checked) {
+        vEdi.forEach((element) => {
+          document.getElementById(element).style = "display: block;";
+        });
+      } if (document.getElementById("sascha").checked) {
+        vSascha.forEach((element) => {
+          document.getElementById(element).style = "display: block;";
+        });
+      } else {
+        onStart();
+      }
+    }
+
+    function onStart() {
+      all.forEach((element) => {
+        document.getElementById(element).style = "display: none;";
+      });
+    }
+  </script>
+  <body onload="onStart()">
+    <div1>
+      <input type="checkbox" id="sascha" name="sascha" onclick="checkbox()" />
+      <label for="sascha">Sascha</label>
+    </div1>
+    <br />
+    <div2>
+      <input type="checkbox" id="edi" name="edi" onclick="checkbox()" />
+      <label for="edi">Edi</label>
+    </div2>
+    <br />
+    <h1 id="3-semester-informatik">3. Semester Informatik</h1>
+    <div id="software-engineering">
+      <h2>Software Engineering</h2>
+      <ul>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/goto_adam_crs_1123965.html"
+              target="_blank"
+              >Adam</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1238063&amp;cmd=calldirectlink"
+              target="_blank"
+              >Vorlesung + Übung</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://unibas-marcelluethi.github.io/software-engineering/"
+              target="_blank"
+              >Github</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="scientific-computing">
+      <h2>Scientific Computing</h2>
+      <ul>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/goto_adam_crs_1123963.html"
+              target="_blank"
+              >Adam</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1245678&amp;cmd=calldirectlink"
+              target="_blank"
+              >Vorlesung</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1247396&amp;cmd=calldirectlink"
+              target="_blank"
+              >Übung</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="discrete-mathematics">
+      <h2>Discrete Mathematics</h2>
+      <ul>
+        <li>
+          <p>
+            <a href="https://adam.unibas.ch/goto_adam_crs_1122510.html">Adam</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1228174&amp;cmd=calldirectlink"
+              target="_blank"
+              >Vorlesung</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1228172&amp;cmd=calldirectlink"
+              target="_blank"
+              >Course Website</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="catch21">
+      <h2>CATCH21</h2>
+      <ul>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/goto_adam_crs_1250480.html"
+              target="_blank"
+              >Adam</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1251261&amp;cmd=calldirectlink"
+              target="_blank"
+              >Vorlesung und Q&amp;A</a
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://adam.unibas.ch/ilias.php?baseClass=ilLinkResourceHandlerGUI&amp;ref_id=1251277&amp;cmd=calldirectlink"
+              target="_blank"
+              >Übung</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
