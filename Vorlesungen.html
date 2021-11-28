@@ -5,55 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vorlesungen</title>
-  <style>
-    div {
-      width: 320px;
-      padding: 10px;
-      border: 5px solid gray;
-      margin: 0;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
-<script type="text/javascript">
-  var base = ["software-engineering", "scientific-computing"];
-  var all = [
-    "software-engineering",
-    "scientific-computing",
-    "discrete-mathematics",
-    "catch21",
-  ];
-
-  var vEdi = ["discrete-mathematics", "catch21"];
-
-  var vSascha = ["software-engineering", "scientific-computing"];
-
-  function checkbox() {
-    if (document.getElementById("edi").checked) {
-      vEdi.forEach((element) => {
-        document.getElementById(element).style = "display: block;";
-      });
-    } else {
-      vEdi.forEach((element) => {
-        document.getElementById(element).style = "display: none;";
-      });
-    }
-    if (document.getElementById("sascha").checked) {
-      vSascha.forEach((element) => {
-        document.getElementById(element).style = "display: block;";
-      });
-    } else {
-      vSascha.forEach((element) => {
-        document.getElementById(element).style = "display: none;";
-      });
-    }
-  }
-
-  function onStart() {
-    all.forEach((element) => {
-      document.getElementById(element).style = "display: none;";
-    });
-  }
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 <body onload="onStart()">
   <div1>
@@ -67,7 +22,7 @@
   </div2>
   <br />
   <h1 id="3-semester-informatik">3. Semester Informatik</h1>
-  <div id="software-engineering">
+  <div class="lecture" id="software-engineering">
     <h2>Software Engineering</h2>
     <ul>
       <li>
@@ -89,7 +44,7 @@
     </ul>
   </div>
   <br />
-  <div id="scientific-computing">
+  <div class="lecture" id="scientific-computing">
     <h2>Scientific Computing</h2>
     <ul>
       <li>
@@ -112,7 +67,7 @@
     </ul>
   </div>
   <br />
-  <div id="discrete-mathematics">
+  <div class="lecture" id="discrete-mathematics">
     <h2>Discrete Mathematics</h2>
     <ul>
       <li>
@@ -135,7 +90,7 @@
     </ul>
   </div>
   <br />
-  <div id="catch21">
+  <div class="lecture" id="catch21">
     <h2>CATCH21</h2>
     <ul>
       <li>
